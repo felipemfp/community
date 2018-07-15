@@ -43,4 +43,5 @@ config :community, Community.Repo,
   password: "postgres",
   database: "community_dev",
   hostname: "localhost",
-  pool_size: 10
+  pool_size: 10,
+  port: "54320"
