@@ -1,9 +1,19 @@
 # Community
 
+#### Docker
+
+Run the project with docker-compose:
+
+```sh
+docker-compose up
+```
+
+#### Native
+
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
-  * Run PostgreSQL with `docker-compose up`
+  * Run PostgreSQL with `docker-compose up -d db`
   * Create and migrate your database with `mix ecto.create && mix ecto.migrate`
   * Start Phoenix endpoint with `mix phx.server`
 
