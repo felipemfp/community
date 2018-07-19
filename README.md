@@ -2,11 +2,11 @@
 
 #### Docker
 
-Run the project with docker-compose:
+To start with Docker:
 
-```sh
-docker-compose up
-```
+  * Build images with `docker-compose build`
+  * Setup database with `docker-compose run app mix ecto.setup`
+  * Start the server with `docker-compose up`
 
 #### Native
 
@@ -14,7 +14,7 @@ To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
   * Run PostgreSQL with `docker-compose up -d db`
-  * Create and migrate your database with `mix ecto.create && mix ecto.migrate`
+  * Create and migrate your database with `mix ecto.setup`
   * Start Phoenix endpoint with `mix phx.server`
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
